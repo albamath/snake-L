@@ -99,13 +99,13 @@
         }
 
         //paint background
-        ctx.fillStyle = "darkslategrey";
+        ctx.fillStyle = "brblack";
         ctx.fillRect(0, 0, halfGridSize*tileSize, gridSize*tileSize);    
         ctx.fillRect(halfGridSize*tileSize, halfGridSize*tileSize, halfGridSize*tileSize, halfGridSize*tileSize);
         
 
         // paint snake
-        ctx.fillStyle = "springgreen";
+        ctx.fillStyle = "cyan";
         for (var i = 0; i < snakeTrail.length; i++) {
           ctx.fillRect(
             snakeTrail[i].x * tileSize,
@@ -121,7 +121,7 @@
         }
 
         // paint apple
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "brred";
         ctx.fillRect(appleX * tileSize, appleY * tileSize, tileSize, tileSize);
 
         //set snake trail
